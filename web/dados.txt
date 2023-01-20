@@ -1,0 +1,9 @@
+criar um projeto web em react
+  - npm create vite@latest
+
+extencao do visual code 
+  -PostCSS Language Support
+
+Tailwindcss para estilizar a pagina
+  - npm i -D tailwindcss postcss autoprefixer
+  - npx tailwindcss init -p **criar o aquivo de configuracao 

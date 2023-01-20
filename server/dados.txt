@@ -1,0 +1,24 @@
+criar um projeto novo
+  npm init --y
+  
+DEPEDENCIAS  
+  npm i fastify
+  npm install typescript -D ----torna o projeto typescript
+  npm i @fastify/cors
+
+CRIAR O TSCONFIG 
+  npx tsc --init
+  npm i tsx -D
+
+ORM 
+   i -D prisma
+   npm i @prisma/client 
+   npx prisma init --datasource-provider SQLite //snape the bank
+
+CRIAR O ARQUIVO 
+    npx prisma migrate dev  
+    npx prisma studio --visualizar parte visual do banco
+
+
+    
+ 
