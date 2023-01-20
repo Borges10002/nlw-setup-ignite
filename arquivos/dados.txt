@@ -1,0 +1,8 @@
+
+extensoes visual code
+https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss
+https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv
+https://marketplace.visualstudio.com/items?itemName=Prisma.prisma
+https://marketplace.visualstudio.com/items?itemName=miguelsolorio.fluent-icons
+https://marketplace.visualstudio.com/items?itemName=miguelsolorio.symbols
+https://marketplace.visualstudio.com/items?itemName=WallabyJs.console-ninja

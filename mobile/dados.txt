@@ -1,0 +1,6 @@
+criar um projeto com expo em react native
+  -npx create-expo-app mobile --template
+
+fonts personalizada
+  --https://docs.expo.dev/guides/using-custom-fonts/
+  --npx expo install expo-font @expo-google-fonts/inters
