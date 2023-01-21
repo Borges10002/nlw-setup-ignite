@@ -19,6 +19,17 @@ CRIAR O ARQUIVO
     npx prisma migrate dev  
     npx prisma studio --visualizar parte visual do banco
 
+vs code configura relacionamento automatico do prisma 
+"[prisma]": {
+  "editor.defaultFormatter": "Prisma.prisma",
+  "editor.formatOnSave": true
+},
+
+visualizar diagrama do prisma 
+  --https://www.npmjs.com/package/prisma-erd-generator
+  yarn add -D prisma-erd-generator @mermaid-js/mermaid-cli
+  npx prisma gererate
+
 
     
  

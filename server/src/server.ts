@@ -12,12 +12,12 @@ app.get("/hello", () => {
   return habits;
 });
 
-const port = 3333;
+const port = 3339;
 
 app
   .listen({
     port,
   })
   .then(() => {
-    console.log(`HTTP Server running ${port} ! `);
+    console.log(`HTTP Server running port ${port} ! `);
   });
