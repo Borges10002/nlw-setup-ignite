@@ -4,3 +4,23 @@ criar um projeto com expo em react native
 fonts personalizada
   --https://docs.expo.dev/guides/using-custom-fonts/
   --npx expo install expo-font @expo-google-fonts/inters
+
+NativeWind
+    -- https://www.nativewind.dev/quick-starts/expo
+    --yarn add nativewind
+    --yarn add --dev tailwindcss
+    --npx tailwindcss init
+    3. Add the Babel plugin
+      Modify your babel.config.js  
+
+extensao visual code 
+   Tailwind CSS IntelliSense  
+
+biblioteco para lidar com svg
+   -- https://docs.expo.dev/versions/latest/sdk/svg/
+   -- npx expo install react-native-svg
+       https://github.com/kristerkari/react-native-svg-transformer
+    --npm i react-native-svg-transformer --salve-dev
+
+biblioteca
+    -npm install dayjs
