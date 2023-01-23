@@ -33,3 +33,9 @@ biblioteca de navegacao do reac native
   
   https://reactnavigation.org/docs/hello-react-navigation
     --npm install @react-navigation/native-stack
+
+  biblioteca AXIOS para integracao do backend 
+     -npm i axios
+
+ biblioteca
+   --npm i --save clsx

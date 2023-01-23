@@ -29,7 +29,14 @@ visualizar diagrama do prisma
   --https://www.npmjs.com/package/prisma-erd-generator
   yarn add -D prisma-erd-generator @mermaid-js/mermaid-cli
   npx prisma gererate
+  npx prisma db seed --popular as tabelas
 
+
+validacao de requiscao do froentend
+  --npm i zod
+
+biblioteca para lidadar com data 
+   -npm i dayjs
 
     
  
