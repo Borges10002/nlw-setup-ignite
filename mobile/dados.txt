@@ -39,3 +39,9 @@ biblioteca de navegacao do reac native
 
  biblioteca
    --npm i --save clsx
+
+  react native Reanimated 
+   https://reactnative.dev/docs/animated
+  utilizando o proprio expo 
+  https://docs.expo.dev/versions/latest/sdk/reanimated/
+    --npx expo install react-native-reanimated
