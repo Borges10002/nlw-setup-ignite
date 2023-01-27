@@ -7,3 +7,9 @@ extencao do visual code
 Tailwindcss para estilizar a pagina
   - npm i -D tailwindcss postcss autoprefixer
   - npx tailwindcss init -p **criar o aquivo de configuracao 
+
+biblioteca de icon 
+  --https://phosphoricons.com/
+
+biblioteca para data 
+ -npm i dayjs
