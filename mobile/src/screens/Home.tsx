@@ -1,13 +1,13 @@
 import { useCallback, useState } from "react";
-import { View, Text, ScrollView, Alert } from "react-native";
+import { Text, View, ScrollView, Alert } from "react-native";
+import { useFocusEffect, useNavigation } from "@react-navigation/native";
 
 import { api } from "../lib/axios";
 import { generateRangeDatesFromYearStart } from "../utils/generate-range-between-dates";
 
-import { HabitDay, DAY_SIZE } from "../components/HabitDay";
 import { Header } from "../components/Header";
-import { useNavigation, useFocusEffect } from "@react-navigation/native";
 import { Loading } from "../components/Loading";
+import { HabitDay, DAY_SIZE } from "../components/HabitDay";
 import dayjs from "dayjs";
 
 const weekDays = ["D", "S", "T", "Q", "Q", "S", "S"];
@@ -32,11 +32,12 @@ export function Home() {
     try {
       setLoading(true);
 
-      const response = await api.get(`/summary`);
+      const response = await api.get("/summary");
+
       setSummary(response.data);
-    } catch (error: any) {
-      console.log("Erro" + error);
-      Alert.alert("Ops", "Não foi possivel carregar os sumário de hábitos");
+    } catch (error) {
+      Alert.alert("Ops", "Não foi possível carregar o sumário de hábitos.");
+      console.log(error);
     } finally {
       setLoading(false);
     }
@@ -57,15 +58,16 @@ export function Home() {
       <Header />
 
       <View className='flex-row mt-6 mb-2'>
-        {weekDays.map((weekDays, i) => (
+        {weekDays.map((weekDay, i) => (
           <Text
-            key={`${weekDays} - ${i}`}
+            key={`${weekDay}-${i}`}
             className='text-zinc-400 text-xl font-bold text-center mx-1'
             style={{ width: DAY_SIZE }}>
-            {weekDays}
+            {weekDay}
           </Text>
         ))}
       </View>
+
       <ScrollView
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{ paddingBottom: 100 }}>
@@ -75,6 +77,7 @@ export function Home() {
               const dayWithHabits = summary.find((day) => {
                 return dayjs(date).isSame(day.date, "day");
               });
+
               return (
                 <HabitDay
                   key={date.toISOString()}
@@ -89,9 +92,7 @@ export function Home() {
             })}
 
             {amountOfDaysToFill > 0 &&
-              Array.from({
-                length: amountOfDaysToFill,
-              }).map((_, index) => (
+              Array.from({ length: amountOfDaysToFill }).map((_, index) => (
                 <View
                   key={index}
                   className='bg-zinc-900 rounded-lg border-2 m-1 border-zinc-800 opacity-40'
