@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node dist/server.js",
+    "build": "rimraf dist && tsc",
     "dev": "tsx watch src/server.ts"
   },
   "keywords": [],
