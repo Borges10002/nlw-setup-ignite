@@ -13,3 +13,12 @@ biblioteca de icon
 
 biblioteca para data 
  -npm i dayjs
+
+ biblioteca para customizar o app 
+   -- https://www.radix-ui.com/docs/primitives/components/dialog
+   --npm install @radix-ui/react-dialog
+   --npm install @radix-ui/react-popover
+   --npm install @radix-ui/react-checkbox
+
+  biblioteca de class styles 
+    -npm i clsx
